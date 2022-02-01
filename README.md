@@ -6,7 +6,7 @@ Crie um programa que realize a multiplicação de duas matrizes, seguindo os seg
 1. implemente a multiplicação de forma não nativa na classe MatrixNonNative
 1. Compare os resultados
 
-# Para compilar
+## Compilando
 
 ```shell
 javac -cp java/main java/main/*.java
