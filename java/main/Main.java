@@ -14,9 +14,21 @@ public class Main {
     }
 
     public static void main(String args[]){
-        System.out.println("JVM");
+        int n1,m1,n2,m2=2;
+
+        if (args.length < 3){
+            System.out.println("Você deve passar quatro parâmetros: Ex: java main.Main 2 3 3 2");
+            System.exit(-1);
+        }
+
+        n1 = Integer.valueOf(args[0]);
+        m1 = Integer.valueOf(args[1]);
+        n2 = Integer.valueOf(args[2]);
+        m2 = Integer.valueOf(args[3]);
+
+        System.out.println("Multiplicando matrizes não nativas " + n1 + "x" + m1 + " por " + n2 + "x" + m2);
         Main.execute(MatrixFactory.create(false));
-        System.out.println("Nativo");
+        System.out.println("Multiplicando matrizes nativas " + n1 + "x" + m1 + " por " + n2 + "x" + m2);
         Main.execute(MatrixFactory.create(true));
     }
 
